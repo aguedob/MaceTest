@@ -8,6 +8,7 @@ import {
   StatusBar,
   TouchableOpacity,
 } from 'react-native';
+import MaceCamera from './MaceCamera';
 
 class Test extends React.Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class Test extends React.Component {
               <View style={styles.sectionTitle}>
                 <Text style={styles.sectionTitleText}>Test</Text>
               </View>
+              <MaceCamera />
             </View>
           </ScrollView>
         </SafeAreaView>

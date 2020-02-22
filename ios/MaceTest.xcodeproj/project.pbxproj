@@ -17,6 +17,8 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* MaceTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MaceTestTests.m */; };
+		31B67ACE2400F360006679D2 /* MCTCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B67ACB2400F360006679D2 /* MCTCameraManager.m */; };
+		31B67ACF2400F360006679D2 /* MCTCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B67ACC2400F360006679D2 /* MCTCamera.m */; };
 		4F7FC497710E288054B7B029 /* libPods-MaceTest-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A0DF139CFD8CE6856456A2 /* libPods-MaceTest-tvOSTests.a */; };
 		89A35C58DDA3BF0963F46B38 /* libPods-MaceTest-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4604F3216E650EC2AC332698 /* libPods-MaceTest-tvOS.a */; };
 		D36CA7D8C05E7587455CD1C0 /* libPods-MaceTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6387F1E543E5268A94A840 /* libPods-MaceTest.a */; };
@@ -58,6 +60,10 @@
 		2947BDA5526278F92199AD95 /* Pods-MaceTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaceTestTests.debug.xcconfig"; path = "Target Support Files/Pods-MaceTestTests/Pods-MaceTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* MaceTest-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MaceTest-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* MaceTest-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MaceTest-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B67ACA2400F360006679D2 /* MCTCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTCamera.h; sourceTree = "<group>"; };
+		31B67ACB2400F360006679D2 /* MCTCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTCameraManager.m; sourceTree = "<group>"; };
+		31B67ACC2400F360006679D2 /* MCTCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTCamera.m; sourceTree = "<group>"; };
+		31B67ACD2400F360006679D2 /* MCTCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTCameraManager.h; sourceTree = "<group>"; };
 		3449C41EE878E8DC1927AAA6 /* Pods-MaceTest-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaceTest-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-MaceTest-tvOSTests/Pods-MaceTest-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		35B7814FD36177135AA07D8A /* libPods-MaceTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MaceTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4604F3216E650EC2AC332698 /* libPods-MaceTest-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MaceTest-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +131,7 @@
 		13B07FAE1A68108700A75B9A /* MaceTest */ = {
 			isa = PBXGroup;
 			children = (
+				31B67AC92400F360006679D2 /* Components */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -149,6 +156,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		31B67AC92400F360006679D2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				31B67ACA2400F360006679D2 /* MCTCamera.h */,
+				31B67ACC2400F360006679D2 /* MCTCamera.m */,
+				31B67ACB2400F360006679D2 /* MCTCameraManager.m */,
+				31B67ACD2400F360006679D2 /* MCTCameraManager.h */,
+			);
+			name = Components;
+			path = MaceTest/Components;
+			sourceTree = "<group>";
+		};
 		491EAECFF38DB36273AFFFD1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +180,6 @@
 				2947BDA5526278F92199AD95 /* Pods-MaceTestTests.debug.xcconfig */,
 				1DCB378E542DE5C7E3EF1915 /* Pods-MaceTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +326,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -530,6 +549,8 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				31B67ACE2400F360006679D2 /* MCTCameraManager.m in Sources */,
+				31B67ACF2400F360006679D2 /* MCTCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
