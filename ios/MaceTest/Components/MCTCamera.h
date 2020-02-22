@@ -17,14 +17,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MCTCamera : UIView <AVCaptureVideoDataOutputSampleBufferDelegate>
 
 @property AVCaptureDevice *videoDevice;
-@property AVCaptureSession *session;
-@property dispatch_queue_t sessionQueue;
+@property AVCaptureSession *captureSession;
+@property dispatch_queue_t captureSessionQueue;
+@property(nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
 @property (nonatomic, weak) RCTBridge *bridge;
-@property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
 
 
 
 - (id)initWithBridge:(RCTBridge *)bridge;
+- (void)getBackCamera;
 
 @end
 

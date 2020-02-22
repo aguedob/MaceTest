@@ -48,7 +48,7 @@
 		00E356F21AD99517003FC87E /* MaceTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaceTestTests.m; sourceTree = "<group>"; };
 		05A4991C7310A44A74D5CD4A /* Pods-MaceTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaceTest.debug.xcconfig"; path = "Target Support Files/Pods-MaceTest/Pods-MaceTest.debug.xcconfig"; sourceTree = "<group>"; };
 		10A8AA6210FD43BEB5237B7B /* Pods-MaceTest-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaceTest-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MaceTest-tvOSTests/Pods-MaceTest-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* MaceTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaceTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Alvarito huevo frito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alvarito huevo frito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MaceTest/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MaceTest/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* MaceTest.app */,
+				13B07F961A680F5B00A75B9A /* Alvarito huevo frito.app */,
 				00E356EE1AD99517003FC87E /* MaceTestTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* MaceTest-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* MaceTest-tvOSTests.xctest */,
@@ -255,7 +255,7 @@
 			);
 			name = MaceTest;
 			productName = MaceTest;
-			productReference = 13B07F961A680F5B00A75B9A /* MaceTest.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Alvarito huevo frito.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* MaceTest-tvOS */ = {
@@ -309,6 +309,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = YV7L95V23Y;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -649,6 +652,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = YV7L95V23Y;
 				INFOPLIST_FILE = MaceTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -656,8 +660,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = MaceTest;
+				PRODUCT_BUNDLE_IDENTIFIER = test.meigal.com;
+				PRODUCT_NAME = "Alvarito huevo frito";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -668,6 +672,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YV7L95V23Y;
 				INFOPLIST_FILE = MaceTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -675,8 +680,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = MaceTest;
+				PRODUCT_BUNDLE_IDENTIFIER = test.meigal.com;
+				PRODUCT_NAME = "Alvarito huevo frito";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
